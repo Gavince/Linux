@@ -1,10 +1,5 @@
----
-typora-copy-images-to: pictures
-typora-root-url: ..\..\pictures
----
-
 [toc]
-#SHELL编程模块课程目标
+# SHELL编程模块课程目标
 
 - ① Shell的基本语法结构
 
@@ -29,9 +24,9 @@ typora-root-url: ..\..\pictures
 
 计算机只能认识（识别）机器语言(0和1)，如（11000000 这种）。但是，我们的程序猿们不能直接去写01这样的代码，所以，要想将程序猿所开发的代码在计算机上运行，就必须找"人"（工具）来==翻译成机器语言==，这个"人"(工具)就是我们常常所说的**==编译器==**或者**==解释器==**。
 
-![编译和解释型语言区别](/编译和解释型语言区别.png)
+![编译和解释型语言区别](./pictures/编译和解释型语言区别.png)
 
-##1. 编程语言分类
+## 1. 编程语言分类
 
 - **编译型语言：**
 
@@ -41,15 +36,15 @@ typora-root-url: ..\..\pictures
 
 ​    程序不需要编译，程序在运行时由**==解释器==**翻译成机器语言，每执行一次都要翻译一次。因此效率比较低。比如Python/JavaScript/ Perl /ruby/==Shell==等都是解释型语言。
 
-![./语言分类](语言分类.png)
+![./语言分类](./pictures/语言分类.png)
 
 - **总结**
 
 编译型语言比解释型语言==速度较快==，但是不如解释型语言==跨平台性好==。如果做底层开发或者大型应用程序或者操作系开发一==般都用编译型语言==；如果是一些服务器脚本及一些辅助的接口，对速度要求不高、对各个平台的==兼容性有要求==的话则一般都用==解释型语言==。
 
-##2. shell简介
+## 2. shell简介
 
-![00_shell介绍](/00_shell介绍.png)
+![00_shell介绍](./pictures/00_shell介绍.png)
 
 **总结：**
 
@@ -69,9 +64,9 @@ typora-root-url: ..\..\pictures
 
 **思考：终端和shell有什么关系？**
 
-![01_shell介绍](./01_shell介绍.png)
+![01_shell介绍](./pictures//01_shell介绍.png)
 
-##3. shell脚本
+## 3. shell脚本
 
 ### ㈠ 什么是shell脚本？
 
@@ -331,6 +326,8 @@ $变量名 和 ${变量名}的异同
 
 ### ㈡ 命令执行结果赋值给变量
 
+[\${}、 \$()、``区别 | Shell](https://blog.csdn.net/sanyho/article/details/108994457?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-108994457-blog-111478006.pc_relevant_multi_platform_whitelistv3&spm=1001.2101.3001.4242.1&utm_relevant_index=2)
+
 ```powershell
 [root@MissHou ~]# B=`date +%F`
 [root@MissHou ~]# echo $B
@@ -540,6 +537,8 @@ a b c
 
 ## 1. 四则运算符号
 
+[shell编程之shell 运算](https://jinyi.blog.csdn.net/article/details/117405471?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-3-117405471-blog-109487976.pc_relevant_sortByStrongTime&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-3-117405471-blog-109487976.pc_relevant_sortByStrongTime&utm_relevant_index=6)
+
 | 表达式  | 举例                            |
 | ------- | ------------------------------- |
 | $((  )) | echo $((1+1))                   |
@@ -695,8 +694,6 @@ declare -A books='([linux]="1" )'
 [root@MissHou shell05]# declare -A|grep books
 declare -A books='([linux]="2" )'
 ```
-
-
 
 ## 2. 其他变量定义
 

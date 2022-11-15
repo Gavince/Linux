@@ -8,9 +8,9 @@ typora-root-url: pictures
 - 了解shell中的通配符
 - 熟悉grep、cut、sort等小工具和shell中的通配符的使用
 
-#一、文本处理工具
+# 一、文本处理工具
 
-##1. ==grep工具==
+## 1. ==grep工具==
 
 > grep是**==行==**过滤工具；用于根据关键字进行行过滤
 
@@ -86,7 +86,12 @@ source ~/.bashrc
 # grep -C 5 mail passwd 					匹配包含mail关键字及其前后5行
 ```
 
-##2. ==cut工具==
+## 2. ==cut工具==
+
+cut和awk的主要区别：
+
+awk 以空格为分割域时,是以单个或多个连续的空格为分隔符的;
+cut则是以单个空格作为分隔符。
 
 > cut是**==列==**截取工具，用于列的截取
 
@@ -542,5 +547,4 @@ date +%F
 [root@MissHou  dir1]# echo $(echo `date +%F`)
 2018-11-22
 ~~~
-
 

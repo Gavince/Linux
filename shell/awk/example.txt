@@ -13,3 +13,7 @@ proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
 www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
 backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
 list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+www-data:x:33:33:www-data:/variance/www:/usr/sbin/nologin
+www-data:x:33:33:www-data:/vary/www:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var_de/www:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
